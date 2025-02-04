@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+:root {
+    --font-family: Sora, sans-serif;
+    --font-size: 14px;
+    --body-bg: #FFFFFF;
+    --title-color: #20293A;
+    --text-color: #394150;
+    --border-color: #E5EAF0;
+    --badge-bg: #FAFAF9;
+    --badge-text-color: #7C19EE;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    height: 100vh;
+    line-height: 1.5;
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card, .card-image {
+    border-radius: .5rem;
+}
+
+.card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+}
+
+.card-header{
+    padding: .8rem;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+}
+
+.card-badge {
+    margin-top: 1rem;
+    width: fit-content;
+    background-color: var(--badge-bg);
+    color: var(--badge-text-color);
+    padding: .2rem .5rem;
+    border-radius: 2rem;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.card-title {
+    font-size: 18px;
+    padding: 1rem 1rem 0;
+    color: var(--title-color);
+}
+
+.card-description {
+    padding: 0 1rem;   
+    margin-bottom: 1rem;
+}
+
+.card-author {
+    border-top: 2px solid var(--border-color);
+    padding: 1rem;
+}
