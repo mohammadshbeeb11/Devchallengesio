@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FFFFFF;
+    --qa-background-color: #F8FAFC;
+    --text-color: #030616;
+    --links-color: #4E80EE;
+    --border-color: #D2D5DA;
+    --font-family: Inter, sans-serif;
+    --font-size: 16px;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    font-weight: var(--fw-semibold);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+a {
+    color: var(--links-color);
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+header {
+    text-align: center;
+    height: 20vh;
+    padding: 1rem 0 0;
+}
+
+main {
+    background-color: var(--qa-background-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+section {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+section:first-child {
+    border-bottom: 1px solid var(--border-color);
+}
+
+li {
+    margin-bottom: .5rem;
+}
