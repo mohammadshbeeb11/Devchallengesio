@@ -10,7 +10,7 @@
 :root {
     --font-family: Sora, sans-serif;
     --font-size: 14px;
-    --body-bg: #FFFFFF;
+    --body-bg: #F2EAFD;
     --title-color: #20293A;
     --text-color: #394150;
     --border-color: #E5EAF0;
@@ -38,10 +38,10 @@ body {
 }
 
 .card {
+    background-color: #ffffff;
     width: 320px;
     display: flex;
     flex-direction: column;
-
     box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
 }
 
